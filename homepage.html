@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="genesis_logo.png" rel="icon">
+    <title>Genesis</title>
+</head>
+<body>
+  <header>
+    <h1>GENESIS+</h1>
+    <input id="search" placeholder="  What do you want to know?">
+    <nav>
+      <ul class="menu">
+        <li><a href="#hero" style="color: white;">Home</a></li>
+        <li><a href="#services" style="color: white;">Services</a></li>
+        <li><a href="#doctors" style="color: white;">Doctors</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="div1">
+    <h2 class="formh">Book your appointment now !</h2>
+    <form id="form">
+        <label id="name">Full Name: </label>
+        <input type="text" placeholder="Enter your name">
+        <br>
+        <label id="gender">Gender:
+          <label id="male">Male</label>
+          <input type="radio" for="male" value="male" name="gender">
+          <label id="female">Female</label>
+          <input type="radio" for="female" value="female" name="gender">
+          <label id="other">Others</label>
+          <input type="radio" for="other" value="other" name="gender">
+         </label>
+        <br>
+        <label id="age">Age :</label>
+        <input type="number" for="age">
+        <br>
+        <label id="city">Select city : </label>
+        <select type="dropd" value="cities" name="cities">
+            <option value="" disabled selected hidden>Select an option</option>
+            <option value="">Ahmedabad</option>
+            <option value="">Bengaluru</option>
+            <option value="">Bhopal</option>
+            <option value="">Chennai</option>
+            <option value="">Chandigarh</option>
+            <option value="">Gurgaon</option>
+            <option value="">Guwahati</option>
+            <option value="">Hyderabad</option>
+            <option value="">Kolkata</option>
+            <option value="">Mumbai</option>
+            <option value="">New Delhi</option>
+        </select>
+        <br>
+        <label id="phone">Phone : </label>
+        <input type="tel" for="phone">
+        <br>
+        <label id="email">Email :</label>
+        <input type="email" for="email" name="email">
+        <br>
+        <label id="date">Date of Appointment</label>
+        <input type="date-time" for="date" name="date">
+        <br>
+        <button id="button" type="submit">Submit</button>
+
+        
+    </form>
+  </div>
+
+    
+
+     <footer>
+    <p>&copy; 2025 GENESIS+. All rights reserved.</p>
+  </footer>  
+</body>
+</html> 
