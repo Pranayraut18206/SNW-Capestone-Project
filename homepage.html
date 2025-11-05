@@ -10,18 +10,23 @@
 <body>
   <header>
     <h1>GENESIS+</h1>
-    <input id="search" placeholder="  What do you want to know?">
+    <input id="search" placeholder= "What do you want to know?">
     <nav>
       <ul class="menu">
-        <li><a href="#hero" style="color: white;">Home</a></li>
         <li><a href="#services" style="color: white;">Services</a></li>
         <li><a href="#doctors" style="color: white;">Doctors</a></li>
+        <li><a href="login.html" style="color: white;">Login</a></li>
       </ul>
     </nav>
   </header>
-  <div class="div1">
-    <h2 class="formh">Book your appointment now !</h2>
+  <div class="appointment-container">
+   <div class="doctor-image">
+    <img src="form1.png" alt="Doctor illustration">
+   </div>
+   <div class="div1">
+    <h2 class="formh">Book your appointment now!</h2>
     <form id="form">
+        
         <label id="name">Full Name: </label>
         <input type="text" placeholder="Enter your name">
         <br>
@@ -36,6 +41,12 @@
         <br>
         <label id="age">Age :</label>
         <input type="number" for="age">
+        <br>
+        <label id="phone">Phone : </label>
+        <input type="tel" for="phone">
+        <br>
+        <label id="email">Email :</label>
+        <input type="email" for="email" name="email">
         <br>
         <label id="city">Select city : </label>
         <select type="dropd" value="cities" name="cities">
@@ -53,19 +64,33 @@
             <option value="">New Delhi</option>
         </select>
         <br>
-        <label id="phone">Phone : </label>
-        <input type="tel" for="phone">
-        <br>
-        <label id="email">Email :</label>
-        <input type="email" for="email" name="email">
-        <br>
         <label id="date">Date of Appointment</label>
-        <input type="date-time" for="date" name="date">
+        <input type="date" for="date" name="date">
         <br>
         <button id="button" type="submit">Submit</button>
-
-        
     </form>
+   </div>
+  </div>
+  <div class="servi">
+    <h2 id="serv">Services provided by us</h2>
+  <div id="div-services" style="background-color: aliceblue;height: 350px;">
+   <div id="img1">
+    <img src="img1.png" alt="img1" class="services">
+    <p class="image">24/7 Emergency Support</p>
+   </div>
+   <div id="img2">
+    <img src="img2.png" alt="img2" class="services">
+    <p class="image">Highly Qualified Doctors</p>
+   </div>
+   <div id="img3">
+    <img src="img3.png" alt="img3" class="services">
+    <p class="image">All Health Monitoring test</p>
+   </div>
+   <div id="img4">
+    <img src="img4.png" alt="img4" class="services">
+    <p class="image">Latest Medical Equipments</p>
+   </div>
+  </div>
   </div>
 
     
