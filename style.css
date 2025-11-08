@@ -53,10 +53,11 @@
   }
 
 
-  .menu a:hover {
+  nav:hover {
     text-decoration: underline;
     color:rgb(73, 94, 100);
   }
+
   .div1{
     background-color: lightblue;
     margin-left: 200px;
