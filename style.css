@@ -1,29 +1,32 @@
-    * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       
     }
 
-    body {
+body {
       background-color: white;
       color: #333;
       line-height: 1.6;
     }
 
-    header {
-      background: #607fab;
+header {
+      background: #1a6ee2;
       color: #fff;
       padding: 20px 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      position: sticky;
+      position: fixed;
+      top: 0;
+      width: 100%;
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      z-index: 10;
     }
 
-    header h1 {
+header h1 {
       margin-left: -20px;
       font-size: 50px;
       letter-spacing: 1px;
@@ -55,11 +58,11 @@
 
   nav:hover {
     text-decoration: underline;
-    color:rgb(73, 94, 100);
+    color:#f6f8f9;
   }
 
   .div1{
-    background-color: lightblue;
+    
     margin-left: 200px;
 
   }
@@ -68,34 +71,38 @@
   align-items: center;
   gap: 1px;
   padding: 10px;
-  background-color: lightblue;
-    
+  background-image: url(backimg.png);
+  padding-top: 150px;
+  padding-bottom: 60px;
+  
+  
   }
-
-  .doctor-image img {
+.doctor-image img {
   position: relative;
   top: 4px;
   left: 120px;
   width: 500px;
   border-radius: 20px;
-}
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+} 
   .formh{
         position: relative;
         right: 50px;
         font-size: 50px;
-        font-family: 'Times New Roman', Times, serif;
-        
-
-    }
+        font-family:'Times New Roman', Times, serif
+  }
+  
   #form{
-    
-    border: 1px solid;
-    border-radius: 20px;
-    border: 0 solid green;
-    height: 430px;
-    width: 500px;
-    background-color: rgb(241, 228, 198);
-    font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px; 
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  height: 490px;
+  width: 500px;
+  background-color: rgb(241, 228, 198);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
     
   }
   #form-img{
@@ -117,18 +124,27 @@
      height: 30px;
      border-radius: 10%;
   }
+  hr{
+    margin: auto;
+    color: rgb(217,215,215);
+    width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
   .servi{
      border: 2px solid black;
-  }
+     background: linear-gradient(180deg, #e9f5ff 0%, #f7fbff 100%);
+     padding: 40px 0;
+    }
 
 
   #serv{
   text-align: center;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #607fab;
+  color: black;
   font-size: 50px;
-  ;
+  font-style: oblique;
  }
 
  #div-services{
@@ -152,3 +168,44 @@
   font-size: 20px;
  }
  
+ #doctor{
+  background-color: aliceblue;
+  width: 100%;
+  
+
+ }
+
+
+
+ #doc1,#doc2{
+  
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+  
+  }
+.meera,.sid,.anaya,.raghav{
+  height: 400px;
+  width: 450px;
+  border: 5px solid rgb(251, 144, 144);
+  border-radius: 30%;
+  margin:20px 0;
+}
+
+.speciality{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 30px;
+  color:rgb(0,0,0);
+}
+.special{
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 15px;
+}
+footer{
+  background-color: rgb(113, 134, 239);
+  color: white;
+  height: 150px;
+}
