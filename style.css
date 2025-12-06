@@ -72,9 +72,10 @@ header h1 {
   gap: 1px;
   padding: 10px;
   background-image: url(backimg.png);
+
   padding-top: 150px;
   padding-bottom: 60px;
-  
+  border: 3px solid black;
   
   }
 .doctor-image img {
@@ -132,48 +133,66 @@ header h1 {
     margin-bottom: 20px;
   }
 
-  .servi{
-     border: 2px solid black;
-     background: linear-gradient(180deg, #e9f5ff 0%, #f7fbff 100%);
-     padding: 40px 0;
-    }
-
-
-  #serv{
+#serv{
   text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: black;
   font-size: 50px;
-  font-style: oblique;
- }
-
- #div-services{
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  padding: 140px;
-  background-color: white;
-
- }
- .services{
-  height: 200px;
-  width: 200px;
-  border-radius: 20%;
-  border: 5px solid darkblue;
- }
-
- .image{
-  font-weight: bold;
-  text-align: center;
-  font-size: 20px;
- }
- 
- #doctor{
-  background-color: aliceblue;
-  width: 100%;
+  color: grey;
   
+}
 
+#div-services {
+  background-color: aliceblue;
+  padding: 40px;
+}
+#div-services{
+  display: flex;
+  gap: 90px;
+}
+.section-group {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-left: -90px;
+  text-decoration: underline;
+  color:black;
+  font-style: italic;
+}
+
+.two-col {
+  display: flex;
+  justify-content: center;
+  gap: 100px;    
+}
+
+.two-col ul {
+  list-style: disc;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.two-col li:hover{
+  background-color: blue;
+  color: white;
+  
+}
+
+
+ #doctor{
+  width: 100%;
+  border: 1px solid black
  }
+
+#doctors {
+  padding-top: 120px;
+  margin-top: -120px;
+}
+
+ 
 
 
 
@@ -231,4 +250,276 @@ footer{
   border: 2px solid grey;
   height: 35px;
   width: 35px;
+}
+header h1:hover{
+  color:rgb(201, 201, 230);
+}
+#s:hover{
+  font-size: 20px;
+  color: rgb(124, 124, 33);
+}
+#d:hover{
+  font-size: 20px;
+}
+#login:hover{
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+
+ 
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    position: fixed;
+  }
+
+  header h1 {
+    font-size: 32px;
+    margin-left: 0;
+  }
+
+  #search {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  #services {
+    padding: 40px 0;
+    background: #f4f8ff;
+}
+
+#serv {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#div-services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#specilities1, #specilities2,
+#procedures1, #procedures2 {
+    width: 250px;
+}
+
+
+#specilities1 h3,
+#procedures1 h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #2a4fa3;
+    text-align: left;
+}
+
+
+#div-services ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#div-services li {
+    font-size: 18px;
+    padding: 8px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+#div-services li:last-child {
+    border-bottom: none;
+}
+
+
+#div-services li:hover {
+    color: #1f3fa8;
+    font-weight: 600;
+    cursor: default;
+}
+
+
+@media (max-width: 768px) {
+    #div-services {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+  .div1 {
+    margin-left: 0;
+  }
+
+
+  #services, #doctors {
+    padding-top: 150px;
+    margin-top: -150px;
+  }
+
+
+
+  .appointment-container {
+    flex-direction: column;
+    padding: 160px 20px 50px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .doctor-image img {
+    width: 80%;
+    left: 0;
+  }
+
+  .formh {
+    font-size: 32px;
+    right: 0;
+    text-align: center;
+  }
+
+  #form {
+    width: 90%;
+    height: auto;
+  }
+
+  #button {
+    margin-left: 0;
+    width: 120px;
+  }
+
+
+  #div-services {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .services {
+    width: 150px;
+    height: 150px;
+  }
+
+  #serv {
+    font-size: 36px;
+  }
+
+
+  #doc1, #doc2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .meera, .sid, .anaya, .raghav {
+    width: 90%;
+    height: auto;
+  }
+
+  .speciality {
+    font-size: 24px;
+  }
+
+  .special {
+    font-size: 24px;
+  }
+
+
+  
+  footer {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #7387f4;
+    padding: 20px;
+    color: white;
+}
+
+  #follow {
+    justify-content: center;
+  }
+
+  .folimg:hover {
+    height: 28px;
+    width: 28px;
+  }
+  .foot1,.foot2{
+    width: 45%;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  body {
+    padding-top: 180px;
+  }
+
+
+  #serv,
+  .speciality,
+  .special {
+    font-size: 28px !important;
+    line-height: 1.2;
+    margin: 20px 0 10px 0;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+
+  #div-services {
+    flex-direction: column;
+    padding: 20px 10px !important;
+    gap: 30px !important;
+  }
+
+  .services {
+    width: 120px;
+    height: 120px;
+  }
+
+
+  #doc1,
+  #doc2 {
+    flex-direction: column !important;
+    padding: 20px 0 !important;
+    gap: 40px !important;
+  }
+
+  .meera, .sid, .anaya, .raghav {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+ 
+  .appointment-container,
+  #doctor,
+  .servi {
+    height: auto !important;
+  }
+
+ 
+  * {
+    max-width: 100%;
+  }
 }

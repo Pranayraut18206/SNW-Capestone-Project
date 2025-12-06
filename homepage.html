@@ -6,6 +6,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="genesis_logo.png" rel="icon">
     <title>Genesis</title>
+    <script src="homepage.js"></script>
 </head>
 <body>
   <header>
@@ -13,55 +14,56 @@
     <input id="search" placeholder= "What do you want to know?">
     <nav>
       <ul class="menu">
-        <li><a href="#services" style="color: white;">Services</a></li>
-        <li><a href="#doctors" style="color: white;">Doctors</a></li>
-        <li><a href="http://127.0.0.1:3000/login.html" style="color: white;">Login</a></li>
+        <li id="s"><a href="#services" style="color: white;">Services</a></li>
+        <li id="d"><a href="#doctors" style="color: white;">Doctors</a></li>
+        <li id="login"><a href="http://127.0.0.1:3000/login.html" style="color: white;">Login</a></li>
       </ul>
     </nav>
   </header>
+
   <div class="appointment-container">
    <div class="doctor-image">
     <img src="form1.png" alt="Doctor illustration">
    </div>
    <div class="div1">
     <h2 class="formh">Book your appointment now!</h2>
-    <form id="form">
+    <form id="form" action="appointment-result.html" method="get">
         
         <label id="name">Full Name: </label>
-        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter your name" name="name">
         <br>
         <label id="gender">Gender:
-          <label id="male">Male</label>
-          <input type="radio" for="male" value="male" name="gender">
-          <label id="female">Female</label>
-          <input type="radio" for="female" value="female" name="gender">
-          <label id="other">Others</label>
-          <input type="radio" for="other" value="other" name="gender">
-         </label>
+        <input type="radio" for="male" value="male" name="gender">
+        <label id="male">Male</label>
+        <input type="radio" for="female" value="female" name="gender">
+        <label id="female">Female</label>
+        <input type="radio" for="other" value="other" name="gender">
+        <label id="other">Others</label>
+        </label>
         <br>
-        <label id="age"style="font-size: 20px;">Age :</label>
-        <input type="number" for="age">
+        <label id="age"style="font-size: 20px;" >Age :</label>
+        <input type="number" for="age" name="age">
         <br>
         <label id="phone"style="font-size: 20px;">Phone : </label>
-        <input type="tel" for="phone">
+        <input type="tel" for="phone" name="phone">
         <br>
         <label id="email"style="font-size: 20px;">Email :</label>
         <input type="email" for="email" name="email">
         <br>
         <label id="city"style="font-size: 20px;">Select city : </label>
-        <select type="dropd" value="cities" name="cities">
+        <select type="dropd" for="city" name="city">
             <option value="" disabled selected hidden>Select an option</option>
-            <option value="">Ahmedabad</option>
-            <option value="">Bengaluru</option>
-            <option value="">Bhopal</option>
-            <option value="">Chennai</option>
-            <option value="">Chandigarh</option>
-            <option value="">Gurgaon</option>
-            <option value="">Guwahati</option>
-            <option value="">Hyderabad</option>
-            <option value="">Kolkata</option>
-            <option value="">Mumbai</option>
-            <option value="">New Delhi</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Gurgaon">Gurgaon</option>
+            <option value="Guwahati">Guwahati</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="New Delhi">New Delhi</option>
         </select>
         <br>
         <label id="date"style="font-size: 20px;">Date of Appointment</label>
@@ -71,36 +73,64 @@
     </form>
    </div>
   </div>
-  <hr>
-  <div id="services">
-    <h2 id="serv">Services provided by us</h2>
-  <div id="div-services" style="background-color: aliceblue;height: 350px;">
-   <div id="img1">
-    <img src="img1.png" alt="img1" class="services">
-    <p class="image">24/7 Emergency Support</p>
-   </div>
-  
-   <div id="img2">
-    <img src="img2.png" alt="img2" class="services">
-    <p class="image">Highly Qualified Doctors</p>
-   </div>
-   
-   <div id="img3">
-    <img src="img3.png" alt="img3" class="services">
-    <p class="image">All Health Monitoring test</p>
-   </div>
-  
-   <div id="img4">
-    <img src="img4.png" alt="img4" class="services">
-    <p class="image">Latest Medical Equipments</p>
-   </div>
-  </div>
-  </div>
 
-  <div id="doctors">
-      <h1 style="text-align: center;color: black;font-size: 40px;font-family:'Times New Roman', Times, serif;font-weight: bold;font-style: oblique;">Specialist's of our Institutions</h1>
+  <hr>
+<div id="services">
+  <h2 id="serv">Specialities and Procedures</h2>
+  <video width="1300px" height="500px" controls><source src="genesis_video.mp4" type="video/mp4"></video>
+<div id="div-services">
+  
+
+    <div class="section-group">
+      <h3 class="section-title">Specialities</h3>
+
+      <div class="two-col">
+        <ul>
+          <li>Cancer Care/Oncology</li>
+          <li>Orthopaedics and Joint Replacements</li>
+          <li>Robotic Surgery</li>
+          <li>Neurosciences</li>
+        </ul>
+
+        <ul>
+          <li>Cardiac Sciences</li>
+          <li>Gastroenterology, Hepatology & Endoscopy</li>
+          <li>Liver Transplant and Biliary Sciences</li>
+          <li>Thoriac Surgery</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="section-group">
+      <h3 class="section-title">Procedures</h3>
+
+      <div class="two-col">
+        <ul>
+          <li>CAR T-Cell Therapy</li>
+          <li>Da Vinci Robotic Surgery</li>
+          <li>Bone Marrow Transplant</li>
+          <li>LVAD Surgery</li>
+        </ul>
+
+        <ul>
+          <li>Knee Replacement Surgery</li>
+          <li>Aortic Valve Surgery</li>
+          <li>Lung Transplant</li>
+          <li>Thoriac Surgery</li>
+        </ul>
+      </div>
+    </div>
+
   </div>
+</div>
+
+
+
   <section id="doctor">
+      <div id="doctors">
+      <h1 style="text-align: center;color: black;font-size: 40px;font-family:'Times New Roman', Times, serif;font-weight: bold;font-style: oblique;">Specialist's of our Institutions</h1>
+      </div>
   <div id="doc1"> 
   <div>
       <img src="anaya_menon.png" class="anaya">
@@ -126,14 +156,17 @@
   </div>
   </div> 
 </section>
-    
+   
+
+
   
 
     
 
-     <footer>
-      <div class="footer">
+  <footer>
+   <div class="footer">
       <h1 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">GENESIS+</h1>
+      <div class="foot1">
       <p>Follow us on</p>
       <div id="follow">
         <div class="insta"><a href="#insta" target="_blank"><img src="insta.png" class="folimg"></a></div>
@@ -142,9 +175,16 @@
         <div class="youtube"><a href="#youtube" target="_blank"><img src="youtube.png" class="folimg"></a></div>
       </div>
       
-    <p>&copy; 2025 GENESIS+. All rights reserved.</p>
+     <p>&copy; 2025 GENESIS+. All rights reserved.</p>
+     </div>
+     <div class="foot2">
+      <h5>Contact Us</h5>
+      <p>Email: genesis.customer.support@gmail.com</p>
+      <p>Phone: 999999900</p>
+      <p>Emergency: 24/7 Available</p>
+     </div>
    </div> 
-  </footer>
+  </footer> 
    
 </body>
-</html> 
+</html>  

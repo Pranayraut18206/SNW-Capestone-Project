@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+  <header>
+    <h1>GENESIS+</h1>
+    
+  </header>
+    <style>
+        body {
+      background-color: white;
+      color: #333;
+      line-height: 1.6;
+    }
+
+header {
+      background: #1a6ee2;
+      color: #fff;
+      padding: 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-bottom: 30px;
+      width: 100%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      z-index: 10;
+      height: 100px;
+
+    }
+
+header h1 {
+      
+      font-size: 50px;
+      letter-spacing: 1px;
+      font-family:'Courier New', Courier, monospace;
+    }
+     
+        div{
+     
+            border: 1px solid wheat;
+            margin-left: 400px;
+            margin-top: 150px;
+            padding: 20px;
+            box-shadow: 5px 5px rgb(239, 234, 224);
+            font-size: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: inline-block;
+            border-radius: 20px;
+        }
+        div h2{
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div>
+<h2>Your Appointment Details</h2>
+<p id="output"></p>
+</div>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+
+    document.getElementById("output").innerHTML = `
+        <b>Name:</b> ${params.get("name")} <br>
+        <b>Gender:</b> ${params.get("gender")} <br>
+        <b>Age:</b> ${params.get("age")} <br>
+        <b>Phone:</b> ${params.get("phone")} <br>
+        <b>Email:</b> ${params.get("email")} <br>
+        <b>City:</b> ${params.get("city")} <br>
+        <b>Date:</b> ${params.get("date")} <br><br>
+        Contact us: 9999999900<br>
+        Email : genesis.customer.support@gmail.com
+
+    `;
+</script>
+
+
+</body>
+</html>
