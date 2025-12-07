@@ -18,7 +18,7 @@ form{
     margin: auto;
     width: 280px;
     height: 260px;
-    padding: 15px;
+    padding: 18px;
     background-color: rgb(233,236,239);
 }
 button{
@@ -60,21 +60,23 @@ hr{
 .but:hover{
     background-color: #006606;
 }
-.button :hover{
+.button:hover{
     opacity: 0.8;
 }
+</style>
 
-    </style>
 </head>
 <body>
     <h1>GENESIS+</h1>
-    <form>
-        <input placeholder="Email address or phone number" style="width:250px;border:1px solid grey;padding:12px 14px">
-        <input placeholder="Password" style="width:250px;border:1px solid grey;padding:12px 14px">
-        <button class="button">Log In</button>
+    <form id="forms">
+        <input id="username" placeholder="Email address or phone number" style="width:250px;border:1px solid grey;padding:12px 14px">
+        <input id="password" type="password" placeholder="Password" style="width:250px;border:1px solid grey;padding:12px 14px">
+        <button class="button" type="submit">Log In</button>
         <a href="#">Forgotten password?</a>
         <hr>
-        <button class="but">Create New Account</button>
+        <button class="but" type="button">Create New Account</button>
+        <p id="message"></p>
     </form>
+<script src="login.js"></script>
 </body>
 </html>

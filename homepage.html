@@ -30,28 +30,28 @@
     <form id="form" action="appointment-result.html" method="get">
         
         <label id="name">Full Name: </label>
-        <input type="text" placeholder="Enter your name" name="name">
+        <input type="text" placeholder="Enter your name" name="name" required>
         <br>
         <label id="gender">Gender:
         <input type="radio" for="male" value="male" name="gender">
-        <label id="male">Male</label>
+        <label id="male" class="gen">Male</label>
         <input type="radio" for="female" value="female" name="gender">
-        <label id="female">Female</label>
+        <label id="female" class="gen">Female</label>
         <input type="radio" for="other" value="other" name="gender">
-        <label id="other">Others</label>
+        <label id="other" class="gen">Others</label>
         </label>
         <br>
         <label id="age"style="font-size: 20px;" >Age :</label>
-        <input type="number" for="age" name="age">
+        <input type="number" for="age" name="age" required>
         <br>
         <label id="phone"style="font-size: 20px;">Phone : </label>
-        <input type="tel" for="phone" name="phone">
+        <input type="tel" for="phone" name="phone" required>
         <br>
         <label id="email"style="font-size: 20px;">Email :</label>
-        <input type="email" for="email" name="email">
+        <input type="email" for="email" name="email" required>
         <br>
         <label id="city"style="font-size: 20px;">Select city : </label>
-        <select type="dropd" for="city" name="city">
+        <select type="dropd" for="city" name="city" required>
             <option value="" disabled selected hidden>Select an option</option>
             <option value="Ahmedabad">Ahmedabad</option>
             <option value="Bengaluru">Bengaluru</option>
@@ -67,7 +67,7 @@
         </select>
         <br>
         <label id="date"style="font-size: 20px;">Date of Appointment</label>
-        <input type="date" for="date" name="date">
+        <input type="date" for="date" name="date" required>
         <br>
         <button id="button" type="submit">Submit</button>
     </form>
@@ -77,7 +77,7 @@
   <hr>
 <div id="services">
   <h2 id="serv">Specialities and Procedures</h2>
-  <video width="1300px" height="500px" controls><source src="genesis_video.mp4" type="video/mp4"></video>
+  <video width="1300px" height="500px" controls class="video"><source src="genesis_video.mp4" type="video/mp4"></video>
 <div id="div-services">
   
 
@@ -176,13 +176,7 @@
       </div>
       
      <p>&copy; 2025 GENESIS+. All rights reserved.</p>
-     </div>
-     <div class="foot2">
-      <h5>Contact Us</h5>
-      <p>Email: genesis.customer.support@gmail.com</p>
-      <p>Phone: 999999900</p>
-      <p>Emergency: 24/7 Available</p>
-     </div>
+     
    </div> 
   </footer> 
    

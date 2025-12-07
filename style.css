@@ -192,10 +192,12 @@ header h1 {
   margin-top: -120px;
 }
 
- 
-
-
-
+.video{
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  margin-left: 380px;
+}
  #doc1,#doc2{
   
   display: flex;
