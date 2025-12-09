@@ -78,6 +78,30 @@
 <div id="services">
   <h2 id="serv">Specialities and Procedures</h2>
   <video width="1300px" height="500px" controls class="video"><source src="genesis_video.mp4" type="video/mp4"></video>
+  <button id="sound" class="unmute">Unmute</button>
+  <script>
+    const vid=document.getElementsByClassName("video")[0];
+    const button=document.getElementById("sound");
+    button.style.backgroundColor="black";
+    button.style.color="white";
+    button.style.borderRadius="8px";
+    button.style.padding="10px 20px";
+    button.style.display="block"
+    
+    button.style.margin="25px auto"
+    button.addEventListener('click',function(){
+      if (button.className=="mute"){
+        vid.muted=true;
+        button.className="unmute";
+        button.innerText="Unmute"
+      }
+      else{
+        vid.muted=false;
+        button.className="mute";
+        button.innerText="Mute"
+      }
+    })
+  </script>
 <div id="div-services">
   
 
